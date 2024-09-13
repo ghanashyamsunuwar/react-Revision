@@ -1,35 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Maps from './practise/Maps'
+import SpreadOperator from './practise/SpreadOperator'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    {/* <SpreadOperator/> */}
+       <Maps/>
     </>
   )
 }
 
 export default App
+// import React, { useState } from 'react';
+
+// const App = () => {
+//   // Initial state with users and their hobbies
+//   const [users, setUsers] = useState([
+//     { id: 1, name: 'Alice', hobbies: ['Reading', 'Cycling'] },
+//     { id: 2, name: 'Bob', hobbies: ['Cooking', 'Swimming'] },
+//   ]);
+
+//   // Function to add a new hobby to a user
+//   const addHobby = (userId, newHobby) => {
+//     setUsers(users.map(user =>
+//       user.id === userId
+//         ? { ...user, hobbies: [...user.hobbies, newHobby] }
+//         : user
+//     ));
+//   };
+
+//   return (
+//     <div>
+//       <h1>Users and Hobbies</h1>
+//       <ul>
+//         {users.map(user => (
+//           <li key={user.id}>
+//             <h2>{user.name}</h2>
+//             <ul>
+//               {user.hobbies.map((hobby, index) => (
+//                 <li key={index}>{hobby}</li>
+//               ))}
+//             </ul>
+//             <button onClick={() => addHobby(user.id, 'New Hobby')}>Add Hobby</button>
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// };
+
+// export default App;
