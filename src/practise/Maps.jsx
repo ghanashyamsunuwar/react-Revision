@@ -42,16 +42,20 @@ const Maps = () => {
   return (
     <div style={{ color: "black" }}>
       {data.map((items) => (
-        <h1>
-          {items.name}
-          {
-            items.placevisit.map((items)=>(
-              <h2>
-                {items.nepal}
-              </h2>
-            ))
-          }
-        </h1>
+        <ul>
+          <li> name: {items.name}</li>
+          <li> age: {items.age}</li>
+          <li>Hobby :
+            <ul>
+            {items.hobby.map((hobbys, index)=>(
+            <li key={index}>{hobbys}</li>
+            ))}
+              </ul>
+            
+          </li>
+          <li></li>
+          <li></li>
+          </ul>
       ))}
     </div>
   );
