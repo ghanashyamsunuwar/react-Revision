@@ -1,4 +1,5 @@
 import './App.css'
+import UsereducePrac from './practise/Hooks/UseReducePrac'
 import UseRefPrac from './practise/Hooks/useRefPrac'
 import Maps from './practise/Maps'
 import SpreadOperator from './practise/SpreadOperator'
@@ -10,6 +11,7 @@ function App() {
     {/* <SpreadOperator/> */}
        <Maps/>
        <UseRefPrac/>
+       <UsereducePrac/>
     </>
   )
 }

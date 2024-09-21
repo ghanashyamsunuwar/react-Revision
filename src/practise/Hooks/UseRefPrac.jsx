@@ -20,6 +20,7 @@ const UseRefPrac = () => {
     // it is use to manupulate dom in react
     const ref = useRef();
     const btnColor = useRef();
+    const findWho = useRef();
   return (
     <div>
         <h3>For use ref</h3>
@@ -32,6 +33,13 @@ const UseRefPrac = () => {
         </button>
         <button ref={btnColor} onClick={()=> {ref.current.style.display = 'none'; btnColor.current.style.backgroundColor = 'red'}}>
             Hide Save Button
+        </button>
+
+        <div ref={findWho} style={{display:'none'}}>
+            I am Janam dai
+        </div>
+        <button onClick={() => {findWho.current.style.display = 'block'}}>
+            who are you ?
         </button>
     </div>
   )
