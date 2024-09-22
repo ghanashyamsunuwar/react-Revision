@@ -1,4 +1,5 @@
 import './App.css'
+import UseMemoPrac from './practise/Hooks/UseMemoPrac'
 import UsereducePrac from './practise/Hooks/UseReducePrac'
 import UseRefPrac from './practise/Hooks/useRefPrac'
 import Maps from './practise/Maps'
@@ -12,6 +13,7 @@ function App() {
        <Maps/>
        <UseRefPrac/>
        <UsereducePrac/>
+       <UseMemoPrac/>
     </>
   )
 }
