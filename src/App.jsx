@@ -1,4 +1,6 @@
 import './App.css'
+import UseCallbackPrac from './practise/Hooks/UseCallbackPrac'
+import Usecontext from './practise/Hooks/UseContext/Usecontext'
 import UseMemoPrac from './practise/Hooks/UseMemoPrac'
 import UsereducePrac from './practise/Hooks/UseReducePrac'
 import UseRefPrac from './practise/Hooks/useRefPrac'
@@ -14,6 +16,8 @@ function App() {
        <UseRefPrac/>
        <UsereducePrac/>
        <UseMemoPrac/>
+       <UseCallbackPrac/>
+       <Usecontext/>
     </>
   )
 }
