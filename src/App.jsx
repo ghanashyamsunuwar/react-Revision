@@ -1,4 +1,6 @@
 import './App.css'
+import MainFile from './practise/Hooks/HOC/MainFile'
+import PropsDrilling from './practise/Hooks/PropsDrilling'
 import UseCallbackPrac from './practise/Hooks/UseCallbackPrac'
 import Usecontext from './practise/Hooks/UseContext/Usecontext'
 import UseMemoPrac from './practise/Hooks/UseMemoPrac'
@@ -18,6 +20,9 @@ function App() {
        <UseMemoPrac/>
        <UseCallbackPrac/>
        <Usecontext/>
+       <MainFile/>
+       <PropsDrilling/>
+
     </>
   )
 }
